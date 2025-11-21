@@ -1,16 +1,16 @@
-A page where our team will record all the progress for our "Intro to software engineering" course titled CS210. 
+# papersmithai
 
-Automatically generates full-length or topic-wise mock papers for JEE.
+A new Flutter project.
 
-Live Test Mode
-Simulates real exam environments with a timer, question navigation, and instant submission.
+## Getting Started
 
-SWOT Analysis Dashboard
-Performs detailed analysis of Strengths, Weaknesses, Opportunities, and Threats after each test.
+This project is a starting point for a Flutter application.
 
-Personalized Recommendations
-Suggests chapters, theory notes, and practice questions to improve weaker areas.
+A few resources to get you started if this is your first Flutter project:
 
-Data-Driven Insights
-Uses machine learning to track progress, difficulty trends, and predictive scores.
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
