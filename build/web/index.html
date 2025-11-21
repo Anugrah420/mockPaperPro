@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/"> <!-- Fixed: Use explicit base href -->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="google-signin-client_id" content="988917967075-d5m8rlsa04relij0kf5ekll08b7kmdd4.apps.googleusercontent.com">
+  
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="classico">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>classico</title>
+  
+  <!-- REMOVED: Firebase SDKs - Let Flutter handle Firebase initialization -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script> -->
+
+  <link rel="manifest" href="manifest.json">
+  
+  <style>
+    /* Add loading styles to prevent null DOM issues */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    
+    #loading {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Add a loading container to ensure DOM element exists -->
+  <div id="loading">
+    <h2>Loading Classico...</h2>
+    <p>Please wait while the app initializes</p>
+  </div>
+
+  <!-- Scripts at the bottom to ensure DOM is loaded -->
+  <script src="main.dart.js" type="application/javascript"></script>
+  <script src="flutter_bootstrap.js" async></script>
+
+  <script>
+    // REMOVED: Firebase initialization from HTML - Let Flutter handle it
+    // This prevents duplicate initialization conflicts
+    
+    // Simple DOM ready check
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM fully loaded and parsed');
+    });
+
+    // Hide loading when Flutter is ready
+    window.addEventListener('flutter-first-frame', function() {
+      const loading = document.getElementById('loading');
+      if (loading) {
+        loading.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
